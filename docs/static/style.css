@@ -1,7 +1,7 @@
 /* -*- css-indent-offset: 2 -*- */
 /*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
 */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img, picture, video, canvas, svg {
-  display: block;
+  /* display: block; */
   max-width: 100%;
 }
 input, button, textarea, select {
@@ -31,22 +31,27 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  font-size: 1.1rem;
+  font-size: 18px;
   color: #333;
+  background: #F7F7FA;
 }
 
 h1, h2, h3, h4 {
   margin: 1.414rem 0 .5rem;
 }
 
-main {
-  margin: auto;
-  max-width: 50rem;
-  padding: 0 15px 15px;
+.h1, h1, h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
 }
 
-h1, h2 {
-  text-align: center;
+h3 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  margin-top: 80px;
+  margin-bottom: 56px;
 }
 
 section {
@@ -74,14 +79,25 @@ footer {
 }
 
 .button {
-  background-color: #199319;
   color: white;
   padding: 15px 25px;
   text-decoration: none;
   cursor: pointer;
   border: none;
   display: inline-block;
-  margin: 0.1rem;
+  margin: 10px;
+  border-radius: 8px;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  width: 280px;
+}
+
+.container {
+  max-width: 780px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
 }
 
 .center {
@@ -89,15 +105,87 @@ footer {
   text-align: center;
 }
 
-.b-gradient {
-  color: white;
-  background: linear-gradient(90deg, #464646, #000000);
-}
-.b-viber { background-color: #8c1af5; }
-.b-telegram { background-color: #5884e1; }
+.b-viber { background-color: #7C509A; }
+.b-telegram { background-color: #27A6E5; }
 
-.red { color: red; }
+.c-white { color: white; }
+/* .c-red { color: red; } */
+
+.bold { font-weight: bold; }
+
 
 .m1 { margin: 1rem; }
+.ml-20 { margin-left: 20px; }
+.mt-40 { margin-top: 40px; }
+.mt-80 { margin-top: 80px; }
+.mt-200 { margin-top: 200px; }
 
-.brand * { vertical-align: middle; }
+.mb-40 { margin-bottom: 40px; }
+
+.link {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.banner {
+  border: 0.1px solid black;
+  background: url("background.svg") center no-repeat;
+  background-size: cover;
+}
+
+ol {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+}
+
+.list-1 {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 680px) {
+  .list-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+ul {
+  padding-left: 24px;
+  margin-top: 8px;
+  list-style-type: disc;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  list-style-type: none;
+}
+
+.bullet {
+  background-color: #F2C94C;
+  border-radius: 50%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.bullet--blue {
+  background-color: #39B6F4;
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
