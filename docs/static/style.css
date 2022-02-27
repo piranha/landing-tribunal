@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
 
 .h1, h1, h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 46px;
   font-weight: bold;
 }
 
@@ -84,13 +84,19 @@ footer {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  display: inline-block;
+  display: inline-flex;
   margin: 10px;
   border-radius: 8px;
   line-height: 24px;
   font-weight: 700;
   font-size: 16px;
   width: 280px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button img {
+  height: 24px;
 }
 
 .container {
@@ -121,6 +127,7 @@ footer {
 .mt-200 { margin-top: 200px; }
 
 .mb-40 { margin-bottom: 40px; }
+
 
 .link {
   margin: 0 20px;
@@ -188,4 +195,23 @@ ul {
 .brand {
   display: flex;
   align-items: center;
+}
+
+.c-red {
+  color: #e03b1c;
+}
+
+@media screen and (max-width: 600px) {
+  .h1, h1, h2, h3 {
+    font-size: 32px;
+  }
+
+  .mt-200 {
+    margin-top: 100px
+  }
+
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }
