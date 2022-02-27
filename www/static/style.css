@@ -1,0 +1,102 @@
+/* -*- css-indent-offset: 2 -*- */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+html, body {
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Styles */
+
+body {
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414rem 0 .5rem;
+}
+
+main {
+  margin: auto;
+  max-width: 50rem;
+  padding: 0 15px 15px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+big {
+  font-size: 2rem;
+}
+
+nav {
+  padding: 1rem 2rem;
+}
+
+footer {
+  padding: 2rem;
+}
+
+.flex { display: flex; }
+.justify-between { justify-content: space-between; }
+.grow { flex-grow: 1; }
+
+.logo {
+  display: inline-block;
+}
+
+.button {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.b-gradient {
+  color: white;
+  background: linear-gradient(90deg, #464646, #000000);
+}
+.b-viber { background-color: #8c1af5; }
+.b-telegram { background-color: #5884e1; }
+
+.red { color: red; }
+
+.m1 { margin: 1rem; }
+
+.brand * { vertical-align: middle; }
